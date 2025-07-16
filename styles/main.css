@@ -1,0 +1,91 @@
+body {
+    background-color: #FAFAFA;
+    color: #111111;
+    font-family: "Montserrat", sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    color: white;
+}
+/* header */
+.header {
+
+}
+.header-nav {
+
+}
+
+.header-nav-logo {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.1;
+    font-style: italic;
+}
+
+.span-logo {
+    font-style: normal;
+}
+.header-nav-list {
+
+}
+.header-nav-item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+}
+
+/* hero */
+
+.hero {
+
+}
+.hero-list {
+
+}
+.hero-list-item {
+    font-weight: 600;
+    font-size: 14px;
+}
+.buy-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    background-color: #FD9222;
+    border: none;
+}
+.made-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    
+}
+.scroll-link {
+
+}
+/* benefits */
+.benefits {
+
+}
+.benefits-title {
+
+}
+.benefits-list {
+
+}
+.benefits-list-item {
+
+}
+/* sensation */

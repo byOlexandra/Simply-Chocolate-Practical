@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Chocolate</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="./index.html">SIMPLY CHOCOLATE <img src="./images/icons/chocolate.svg" alt="logo" width="24" height="24"></a>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="#made">How it's made</a></li>
-                <li><a href="#feedback">Chocolate is loved</a></li>
+    <header class="header">
+        <nav class="header-nav">
+            <a href="./index.html" class="header-nav-logo">SIMPLY <span class="span-logo">CHOCOLATE</span> <img src="./images/icons/chocolate.svg" alt="logo" width="24" height="24">
+            </a>
+            <ul class="header-nav-list">
+                <li class="header-nav-item">
+                    <a href="">Home</a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="#made">How it's made</a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="#feedback">Chocolate is loved</a>
+                </li>
             </ul>
         </nav>
-        <ul>
-            <li>
+        <ul class="header-socials-list">
+            <li class="header-socials-list-item">
                 <a href="https://www.instagram.com/">
                  <img src="./images/icons/instagram.svg" alt="instagram logo">
                 </a>
             </li>
-            <li>
+            <li class="header-socials-list-item">
                 <a href="https://x.com/">
                     <img src="./images/icons/twitter.svg" alt="twitter logo">
                 </a>     
@@ -30,31 +41,34 @@
     </header>
     <main>
         <!--hero-->
-        <section>
-        <h1>Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h1>
-        <ul>
-            <li><button type="button">Buy now</button></li>
-            <li><button type="button">How it's made</button></li>
+        <section class="hero">
+        <h1>Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+        </h1>
+        <ul class="hero-list">
+            <li class="hero-list-item"><button type="button" class="buy-button">Buy now</button>
+            </li>
+            <li class="hero-list-item"><button type="button" class="made-button">How it's made</button>
+            </li>
         </ul>
-        <a href="#">scroll down
+        <a href="#" class="scroll-link">scroll down
             <img src="" alt="scroll down icon">
         </a>
         </section> 
         <!--benefits-->
-        <section>
-            <h2>Benefits</style></h2>
-            <ul>
-                <li>
+        <section class="benefits">
+            <h2 class="benefits-title">Benefits</h2>
+            <ul class="benefits-list">
+                <li class="benefits-list-item">
                     <img src="./images/icons/choc.svg" alt="Chocolate bar" width="32" height="32">
                     <h3>Unsurpassed taste</h3>
                     <p>Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
                 </li>
-                <li>
+                <li class="benefits-list-item">
                     <img src="./images/icons/coin.svg" alt="Coin" width="32" height="32">
                     <h3>Affordable price</h3>
                     <p>Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
                 </li>
-                <li>
+                <li class="benefits-list-item">
                     <img src="./images/icons/la_utensil-spoon.svg" alt="Spoon" width="32" height="32">
                     <h3>Own production</h3>
                     <p>We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
@@ -159,6 +173,6 @@
                 <button type="submit">Subscribe</button>
             </form>
         </div>
-        </footer>
+    </footer>
 </body>
 </html>
