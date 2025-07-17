@@ -18,6 +18,9 @@ h1 {
     line-height: 1.21;
     color: white;
 }
+h2 h3 {
+    font-weight: 600;
+}
 /* header */
 .header {
 
@@ -48,7 +51,9 @@ h1 {
 /* hero */
 
 .hero {
-
+    background-image: url(../images/backgrounds/powder-bachground.jpg);
+    height: 600px;
+    width: 1136px ;
 }
 .hero-list {
 
@@ -73,19 +78,178 @@ h1 {
     
 }
 .scroll-link {
-
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #FFFFFF;
 }
 /* benefits */
 .benefits {
-
+    background-color: #1E1823;
+    color: #FFFFFF;
 }
 .benefits-title {
-
+    font-size: 18px;
+    color: #1E1823;
 }
 .benefits-list {
-
+    
 }
-.benefits-list-item {
-
+.benefits-list-item h3 {
+    font-size: 18px;
+}
+.benefits-list-item p {
+    font-weight: 400;
 }
 /* sensation */
+.sensation {
+    color: #111111;
+}
+
+.sensation-title {
+    font-size: 24px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    text-align: center;
+}
+.taste-span {
+    color: #FD9222;
+}
+.sensation-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.sensation-list {
+
+}
+.sensation-list-item-1 {
+    background-color: #FD9222;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+    color: #FFFFFF;
+}
+.sensation-list-item-2 {
+    background-color: #FFFFFF;
+     width: 270px;
+    height: 270px;
+    border-radius: 15px;
+    border: 1px;
+    border-color: #FD9222;
+}
+.sensation-list-item-3 {
+    background-color: #1E1823;
+    color: #FFFFFF;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+}
+.sensation-list li img {
+    width: 206px;
+    height: 160px;
+}
+.sensation-list li h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.3;
+}
+/* how it's made */
+#made {
+
+}
+.made-title {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: center;
+}
+.made-span {
+    color: #FD9222;
+}
+.div-image {
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+}
+.div-recipe {
+    background-color: #FFFFFF;
+}
+.recipe-title {
+    font-size: 18px;
+    line-height: 1.33;
+}
+.recipe-list {
+    list-style-type: disc;
+}
+.recipe-list-item p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+}
+/* feedback */
+#feedback {}
+.feedback-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.17;
+}
+.span-chocolate {
+    color: #FD9222;
+}
+.feedback-list {}
+.feedback-list-item img {
+    width: 80px;
+    height: 80px;
+}
+.feedback-list-item h3 {
+    font-size: 18px;
+    line-height: 1.33;
+    
+}
+.feedback-list-item p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+}
+.leave-button {
+    font-family: "Montserrat", sans-serif;
+    color: #111111;
+    font-weight: 600;
+    font-size: 18px;
+}
+/* footer */
+.footer {
+    background-color: #1E1823;
+    color: #FFFFFF;
+}
+.contacts p {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+}
+.footer-span {
+    color: #FD9222;
+}
+.address p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+}
+.address-list-item a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+}
+.footer-nav-li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+}
+.subscribe-button {
+    background-color: #FD9222;
+    color: #FFFFFF;
+}
