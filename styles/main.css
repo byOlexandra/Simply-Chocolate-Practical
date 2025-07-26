@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #FAFAFA;
     color: #111111;
@@ -8,6 +14,7 @@ ul {
 }
 
 a {
+    display: block;
     text-decoration: none;
     color: currentColor;
 }
@@ -21,67 +28,163 @@ h1 {
 h2 h3 {
     font-weight: 600;
 }
-/* header */
-.header {
 
+img {
+    display: block; 
+    max-width: 100%; 
+    height: auto;
 }
-.header-nav {
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.highlight {
+    color: #FD9222;
+}
+
+.container {
+    width: 1136px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+ 
+
+/* header */
+
+ /* flex для хедера, потрібний */
+.header-container {
+    display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* flex для навігації потрібний */
+.header-nav {
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+     width: 1136px;
 }
 
 .header-nav-logo {
+    display: flex;
+    gap: 8px;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.1;
     font-style: italic;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: auto;
+    padding: 24px 0;
+}
+.header-nav-logo a {
 }
 
 .span-logo {
     font-style: normal;
 }
-.header-nav-list {
 
+.header-nav-list {
+    display: flex;    
+    gap: 24px;   
+    margin-right: 90px;
 }
+
 .header-nav-item {
+    display: block;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
+    padding: 24px 0;
+   
+}
+.header-socials-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.header-socials-list {
+    display: flex;
+    gap: 18px; 
+    
+}
+
+.header-socials-list-item a {
+   padding: 24px 0;
 }
 
 /* hero */
+.hero-container {
+    /* display: flex; */
+    align-items: center;
+    margin-left: 40px;
+    /* background-image: url(../images/backgrounds/powder-bachground.jpg); */
+    width: 1136px ;
+    padding: 0 32px;
+}
 
+.hero-title {
+    margin-bottom: 32px;
+}
 .hero {
     background-image: url(../images/backgrounds/powder-bachground.jpg);
-    height: 600px;
     width: 1136px ;
+    padding: 0 32px;
+    margin-top: 32px;
+    margin-bottom: 72px;
 }
-.hero-list {
+
+.hero-list-item {
+    /* font-weight: 600;
+    font-size: 14px; */
 
 }
-.hero-list-item {
-    font-weight: 600;
-    font-size: 14px;
+
+.hero-banner-buttons {
+    display: flex;
+    align-items: center;
 }
-.buy-button {
+
+.hero-list {
+    display: flex;
+    text-align: center;
+    gap: 14px;
+}
+
+.button-item {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 14px;
     color: white;
     background-color: #FD9222;
     border: none;
+    border-radius: 100px;
+    padding: 14px 40px;
+    cursor: pointer;
 }
-.made-button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    color: white;
-    
+
+
+.scroll-link img {
+
 }
 .scroll-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.3;
     color: #FFFFFF;
+    margin-left: auto;
 }
 /* benefits */
 .benefits {
@@ -93,10 +196,13 @@ h2 h3 {
     color: #1E1823;
 }
 .benefits-list {
-    
+    display: flex;
+    padding: 50px;
+    gap: 70px;
 }
 .benefits-list-item h3 {
     font-size: 18px;
+    margin-bottom: 18px;
 }
 .benefits-list-item p {
     font-weight: 400;
@@ -111,36 +217,44 @@ h2 h3 {
     line-height: 1.17;
     text-transform: uppercase;
     text-align: center;
+    padding-top: 77px;
+    margin-bottom: 28px;
 }
-.taste-span {
-    color: #FD9222;
-}
+
 .sensation-description {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.3;
+    max-width: 470px;
+    margin: 0 auto;
     text-align: center;
+    margin-bottom: 50px;
+    
 }
 
 .sensation-list {
-
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    margin-bottom: 110px;
 }
-.sensation-list-item-1 {
+.sensation-list-item {
     background-color: #FD9222;
     width: 270px;
     height: 270px;
     border-radius: 15px;
     color: #FFFFFF;
 }
-.sensation-list-item-2 {
+.sensation-list-item:nth-child(even) {
     background-color: #FFFFFF;
+    color: black;
      width: 270px;
-    height: 270px;
+     height: 270px;
     border-radius: 15px;
     border: 1px;
     border-color: #FD9222;
 }
-.sensation-list-item-3 {
+.sensation-list-item:nth-child(3) {
     background-color: #1E1823;
     color: #FFFFFF;
     width: 270px;
@@ -160,15 +274,20 @@ h2 h3 {
 #made {
 
 }
+
+.made-container {
+    display: flex;
+    gap: 20px;
+    
+}
 .made-title {
     text-transform: uppercase;
     font-size: 24px;
     line-height: 1.17;
     text-align: center;
+    margin-bottom: 50px;
 }
-.made-span {
-    color: #FD9222;
-}
+
 .div-image {
     width: 600px;
     height: 400px;
@@ -176,13 +295,26 @@ h2 h3 {
 }
 .div-recipe {
     background-color: #FFFFFF;
+    border-radius: 15px;
+    width: 516px;
+    margin-bottom: 100px;
 }
 .recipe-title {
     font-size: 18px;
     line-height: 1.33;
+    margin-top: 32px;
+    margin-left: 32px;
+    
 }
 .recipe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     list-style-type: disc;
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    max-width: 400px;
 }
 .recipe-list-item p {
     font-weight: 400;
@@ -196,12 +328,21 @@ h2 h3 {
     text-transform: uppercase;
     text-align: center;
     line-height: 1.17;
+    margin-bottom: 50px;
 }
-.span-chocolate {
-    color: #FD9222;
+
+.feedback-list {
+    display: flex;
+    gap: 28px;
+    text-align: center;
+    margin-bottom: 49px;
 }
-.feedback-list {}
+
+.feedback-list-item {
+    align-items: center;
+}
 .feedback-list-item img {
+    
     width: 80px;
     height: 80px;
 }
@@ -220,6 +361,7 @@ h2 h3 {
     color: #111111;
     font-weight: 600;
     font-size: 18px;
+    margin: 0 auto;
 }
 /* footer */
 .footer {
@@ -231,9 +373,7 @@ h2 h3 {
     font-size: 28px;
     line-height: 1.2;
 }
-.footer-span {
-    color: #FD9222;
-}
+
 .address p {
     font-weight: 500;
     font-size: 14px;
@@ -253,3 +393,5 @@ h2 h3 {
     background-color: #FD9222;
     color: #FFFFFF;
 }
+
+
