@@ -21,7 +21,7 @@
                         <a href="" class="header-nav-item">Home</a>
                     </li>
                     <li>
-                        <a href="#made" class="header-nav-item">How it's made</a>
+                        <a href="#made" class="header-nav-item"">How it's made</a>
                     </li>
                     <li>
                         <a href="#feedback" class="header-nav-item">Chocolate is loved</a>
@@ -29,13 +29,14 @@
                 </ul>
               <ul class="header-socials-list">
                 <li class="header-socials-list-item">
-                    <a href="https://www.instagram.com/">
-                     <img src="./images/icons/instagram.svg" alt="instagram logo">
+                    <a href="https://www.instagram.com/" target="_blank">
+                     <svg class="header-icons" width="24" height="24"><use href="./images/sprite.svg#icon-instagram"></use></svg>
                     </a>
                 </li>
                 <li class="header-socials-list-item">
-                    <a href="https://x.com/">
-                        <img src="./images/icons/twitter.svg" alt="twitter logo">
+                    <a href="https://x.com/" target="_blank">
+                        <svg class="header-icons" width="24" height="24"><use href="./images/sprite.svg#icon-twitter"></use></svg>
+
                     </a>     
                 </li>
             </ul>
@@ -47,17 +48,18 @@
             <!--hero-->
             <section class="hero">
             <div class="container hero-container">
+                
                 <h1 class="hero-title">Treat yourself or a loved one to <br>our finest ingredients for a moment <br>of pure delight!
                 </h1>
                 <div class="hero-banner-buttons">
                     <ul class="hero-list">
-                        <li class="hero-list-item"><button type="button" class="button-item">Buy now</button>
+                        <li class="hero-list-item"><button type="button" class="button-item buy">Buy now</button>
                         </li>
                         <li class="hero-list-item"><button type="button" class="button-item how-made-button">How it's made</button>
                         </li>
                     </ul>
                     <a href="#" class="scroll-link">scroll down
-                        <img src="./images/icons/ellipse.svg" alt="scroll down icon">
+                        <div class="scroll-circle"><img src="./images/icons/arrow-icon.svg" alt="scroll icon"></div>
                     </a>
                 </div>
             </div>
@@ -68,17 +70,19 @@
                     <h2 class="visually-hidden">Benefits</h2>
                     <ul class="benefits-list">
                         <li class="benefits-list-item">
-                            <img src="./images/icons/choc.svg" alt="Chocolate bar" width="32" height="32">
+                            <div class="benefits-icon"><img src="./images/icons/choc.svg" alt="Chocolate bar" width="32" height="32"></div>
                             <h3>Unsurpassed taste</h3>
                             <p>Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
                         </li>
+                        <hr class="vertical-line">
                         <li class="benefits-list-item">
-                            <img src="./images/icons/coin.svg" alt="Coin" width="32" height="32">
+                            <div class="benefits-icon"><img src="./images/icons/coin.svg" alt="Coin" width="32" height="32"></div>
                             <h3>Affordable price</h3>
                             <p>Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
                         </li>
+                        <hr class="vertical-line">
                         <li class="benefits-list-item">
-                            <img src="./images/icons/la_utensil-spoon.svg" alt="Spoon" width="32" height="32">
+                            <div class="benefits-icon"><img src="./images/icons/la_utensil-spoon.svg" alt="Spoon" width="32" height="32"></div>
                             <h3>Own production</h3>
                             <p>We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
                         </li>
@@ -92,20 +96,53 @@
                     <p class="sensation-description">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
                     <ul class="sensation-list">
                          <li class="sensation-list-item">
-                         <img src="./images/products/chocolate-pieces.png" alt="Chocolate pieces" width="206" height="160">
-                         <h3>Milk chocolate</h3>
+                         
+                             <img src="./images/products/chocolate-pieces.png" alt="Chocolate pieces" width="206" height="160">
+                             <h3 class="heading-products">Milk chocolate</h3>
+                             <div class="overlay">
+                                <h3 class="overlay-heading">Milk chocolate</h3>
+                                <ul class="overlay-buttons-list">
+                                    <li><button type="button" class="button orange-back">chocolate</button></li>
+                                    <li><button type="button" class="button white-back">the benefits</button></li>
+                                </ul>
+                                <p class="overlay-text">Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most consumed type of chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although four-fifths of all milk chocolate is sold in the United States and Europe.</p>
+                             </div>                         
                          </li>
                          <li class="sensation-list-item">
-                         <img src="./images/products/milk.png" alt="milk" width="206" height="160">
-                         <h3>Milk</h3>
+                            <img src="./images/products/milk.png" alt="milk" width="206" height="160">
+                            <h3 class="heading-products">Milk</h3>
+                            <div class="overlay">
+                                <h3 class="overlay-heading">Milk</h3>
+                                <ul class="overlay-buttons-list">
+                                    <li><button type="button" class="button orange-back">milk</button></li>
+                                    <li><button type="button" class="button white-back">the benefits</button></li>
+                                </ul>
+                                <p class="overlay-text">Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen the immune system.</p>
+                             </div> 
                          </li>
                          <li class="sensation-list-item">
-                         <img src="./images/products/nuts.png" alt="nuts" width="206" height="160">
-                         <h3>Nuts</h3>
+                             <img src="./images/products/nuts.png" alt="nuts" width="206" height="160">
+                            <h3 class="heading-products">Nuts</h3>
+                            <div class="overlay">
+                                <h3 class="overlay-heading">Nuts</h3>
+                                <ul class="overlay-buttons-list">
+                                    <li><button type="button" class="button orange-back">nuts</button></li>
+                                    <li><button type="button" class="button white-back">the benefits</button></li>
+                                </ul>
+                                <p class="overlay-text">Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They’re a good source of fiber, healthy fats, and plant protein. Plus, they’re great on their own.</p>
+                             </div> 
                          </li>
                          <li class="sensation-list-item">
-                         <img src="./images/products/semi-sweet.png" alt="Chocolate" width="206" height="160">
-                         <h3>Semi-sweet chocolate</h3>
+                           <img src="./images/products/semi-sweet.png" alt="Chocolate" width="206" height="160">
+                           <h3 class="heading-products">Semi-sweet chocolate</h3>
+                           <div class="overlay">
+                                <h3 class="overlay-heading">Semi-sweet <br>chocolate</h3>
+                                <ul class="overlay-buttons-list">
+                                    <li><button type="button" class="button orange-back">sweet chocolate</button></li>
+                                    <li><button type="button" class="button white-back">the benefits</button></li>
+                                </ul>
+                                <p class="overlay-text seven-lines">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter and more mellow. </p>
+                             </div> 
                          </li>
                     </ul>
                </div>
@@ -119,7 +156,7 @@
                       <div class="div-recipe">
                          <h3 class="recipe-title">Try  our chocolates today and <br>discover the perfect balance of flavor</h3>
                         <ul class="recipe-list">
-                         <li class="recipe-list-item">
+                         <li class="recipe-list-item one">
                             <p>Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</p>
                          </li>
                          <li class="recipe-list-item">
