@@ -149,10 +149,13 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    
     margin-left: 40px;
     max-width: 1136px;
     padding: 40px 32px;
     height: 600px;
+
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -172,6 +175,9 @@ img {
 
 }
 
+.flex-container {
+    height: 179px;
+}
 
 
 .hero-banner-buttons {
@@ -229,6 +235,36 @@ img {
     color: #FD9222;
 }
 
+.scroll-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms ease;
+}
+
+.scroll-bar:hover {
+    background-color: white;
+    width: 130px;
+    height: 53px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.scroll-bar:hover .scroll-link,
+.scroll-bar:focus .scroll-link {
+    color: #FD9222;
+}
+
+.scroll-bar:hover .scroll-circle,
+.scroll-bar:focus .scroll-circle {
+    background-color: #FD9222;
+}
+
+.scroll-bar:hover img,
+.scroll-bar:focus img {
+    color:#FFFFFF ;
+}
 
 .scroll-circle {
     background-color: #FFFFFF;
@@ -239,18 +275,22 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 350ms ease;
 }
 
 .scroll-link {
   position: relative;
-  
   display: flex;
   align-items: center;
   color: #FFFFFF;
   font-size: 14px;
   gap: 8px;
   cursor: pointer;
-  margin-left: 585px;
+  transition: color 350ms ease;
+}
+
+.icon-arrow {
+    stroke: #FD9222;
 }
 
 
@@ -341,6 +381,8 @@ img {
     color: #FFFFFF;
     
     overflow: hidden;
+
+    box-shadow: 0px 0px 10px 11px #F0F0F0;
 }
 
 .sensation-list-item:hover .overlay {
