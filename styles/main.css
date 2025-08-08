@@ -742,3 +742,87 @@ img {
 }
 
 
+/* pop up modal-window */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(30, 24, 35, 0.7);
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: relative;
+    height: 80%;
+    max-height: 794px;
+    width: 517px;
+    margin: 0 auto;
+    overflow: auto;
+    
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+
+    padding: 40px 40px;
+}
+
+.pop-up-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+
+    border: none;
+    background-color: #FFFFFF;
+    stroke: #111111;
+}
+.close-icon-btn {}
+
+.pop-up-heading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+
+
+    
+    text-transform: uppercase;
+}
+
+.info-box-form {
+    margin-bottom: 18px;
+
+}
+
+.info-label {
+    display: block;
+}
+
+.info-input {
+    width: 100%;
+
+}
+
+.textarea-comments {
+    resize: none;
+    width: 100%;
+    height: ;
+}
+
+.final-btn {
+    border: none;
+    background-color: rgba(253, 146, 34, 1);
+    border-radius: 100px;
+    padding: 14px 40px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+

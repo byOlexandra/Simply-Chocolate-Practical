@@ -248,5 +248,58 @@
             </div>
         </div>
     </footer>
+    <!-- /* pop up modal-window */ -->
+     <div class="backdrop">
+        <div class="modal">
+            <button class="pop-up-close-btn" type="button">
+                <svg class="close-icon-btn" width="28" height="28">
+                    <use href="./images/sprite.svg#icon-x-close"></use>
+                </svg>
+            </button>
+            <p class="pop-up-heading">
+                Leave a review about <br> <span class="highlight">our chocolate</span>
+            </p>
+            <form>
+                <div class="info-box-form">
+                    <label for="user-name" class="info-label">Name</label>
+                        <input type="text" 
+                        class="info-input"
+                        id="user-name" 
+                        name="user-name"
+                        required>
+                    
+                </div>
+                <div class="info-box-form">
+                    <label for="user-name" class="info-label">Email</label>
+                        <input type="text" 
+                        class="info-input"
+                        id="user-name" 
+                        name="user-name"
+                        required>
+                </div>
+                <div class="info-box-form">
+                    <label for="user-name" class="info-label">Phone number</label>
+                        <input type="text" 
+                        class="info-input"
+                        id="user-name" 
+                        name="phone-number"
+                        required>
+                </div>
+                <div class="info-box-form">
+                    <label for="comment" class="info-label">Comment</label>
+                    <textarea 
+                    class="textarea-comments"
+                    name="comments" 
+                    id="comment"
+                    placeholder="Enter text"></textarea>
+                </div>
+                <div class="info-box-form">
+                    <input type="checkbox" id="pp" value="true">
+                    <label for="pp">I accept the terms and conditions of the <a href="" class="highlight">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="final-btn">Send</button>
+            </form>
+        </div>
+     </div>
 </body>
 </html>
