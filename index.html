@@ -256,36 +256,53 @@
                     <use href="./images/sprite.svg#icon-x-close"></use>
                 </svg>
             </button>
+
             <p class="pop-up-heading">
                 Leave a review about <br> <span class="highlight">our chocolate</span>
             </p>
-            <form>
+
+            <form class="pop-up-form">
                 <div class="info-box-form">
                     <label for="user-name" class="info-label">Name</label>
-                        <input type="text" 
-                        class="info-input"
-                        id="user-name" 
-                        name="user-name"
-                        required>
+                        <div class="input-wrapper">
+                            <input type="text"
+                            class="info-input"
+                            id="user-name"
+                            name="user-name"
+                            required>
+                            <svg class="input-icon" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-user"></use>
+                            </svg>
+                        </div>
                     
                 </div>
                 <div class="info-box-form">
                     <label for="user-name" class="info-label">Email</label>
-                        <input type="text" 
-                        class="info-input"
-                        id="user-name" 
-                        name="user-name"
-                        required>
+                        <div class="input-wrapper">
+                            <input type="text"
+                            class="info-input"
+                            id="user-name"
+                            name="user-name"
+                            required>
+                            <svg class="input-icon" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </div>
                 </div>
                 <div class="info-box-form">
                     <label for="user-name" class="info-label">Phone number</label>
-                        <input type="text" 
-                        class="info-input"
-                        id="user-name" 
-                        name="phone-number"
-                        required>
+                        <div class="input-wrapper">
+                            <input type="text"
+                            class="info-input"
+                            id="user-name"
+                            name="phone-number"
+                            required>
+                            <svg class="input-icon" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-phone"></use>
+                            </svg>
+                        </div>
                 </div>
-                <div class="info-box-form">
+                <div class="comment-form">
                     <label for="comment" class="info-label">Comment</label>
                     <textarea 
                     class="textarea-comments"
@@ -293,11 +310,31 @@
                     id="comment"
                     placeholder="Enter text"></textarea>
                 </div>
-                <div class="info-box-form">
-                    <input type="checkbox" id="pp" value="true">
-                    <label for="pp">I accept the terms and conditions of the <a href="" class="highlight">Privacy Policy</a></label>
+
+
+                <div class="pp-box">
+                    <input type="checkbox" 
+                    id="pp" 
+                    value="true"
+                    class="visually-hidden"
+                    name="user-privacy"
+                    >
+                    <label for="pp" class="pp-label">
+                        <span class="custom-box">
+                            <svg class="arrow-pp-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the 
+                        <a href="" class="highlight pp-link">Privacy Policy
+                        </a>
+                    </label>
                 </div>
-                <button type="submit" class="final-btn">Send</button>
+
+
+                <button type="submit" class="final-btn">
+                    Send</button>
+
             </form>
         </div>
      </div>
