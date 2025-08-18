@@ -119,7 +119,7 @@ button {
     .header-nav-list {
     display: flex;    
     gap: 24px;   
-    margin-right: 90px;
+    margin-right: 48px;
 }
 
 .header-nav-item {
@@ -148,7 +148,7 @@ button {
 }
 
 .header-socials-list-item a {
-   padding: 24px 0;
+   padding: 20px 0;
 }
 
 .header-icons {

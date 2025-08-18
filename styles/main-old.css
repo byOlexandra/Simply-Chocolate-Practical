@@ -1,15 +1,5 @@
 
 
-
-/* header */
-
-
-
-/* flex для навігації потрібний */
-.header-nav {
-     width: 1136px;
-}
-
 .header-nav-logo {
     gap: 8px;
     font-size: 18px;
@@ -19,20 +9,11 @@
 
 
 
-.header-nav-list {
-    display: flex;    
-    gap: 24px;   
+.header-nav-list { 
     margin-right: 90px;
 }
 
-.header-nav-item {
-    display: block;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    padding: 24px 0;
-    transition: color 250ms ease;
-}
+
 
 .header-nav-item:hover,
 .header-nav-item:focus {
