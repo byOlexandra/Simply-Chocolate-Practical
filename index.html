@@ -41,18 +41,44 @@
                 </li>
             </ul>
 
-            <button type="button" class="burger-btn">
+            <button type="button" class="burger-btn" data-menu-open>
                 <svg class="burger-icon" width="28" height="28">
                     <use href="./images/sprite.svg#icon-burger"
                     ></use>
                 </svg>
             </button>
             </nav>
+        </div>       
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu-container">
+                <button type="button" class="close-btn" data-menu-close>
+                    <svg class="close-icon" width="28" height="28"><use href="./images/sprite.svg#icon-close"></use></svg>
+                </button>
+                <ul class="mm-list">
+                    <li>
+                        <a href="" class="highlight mm-item">Home</a>
+                    </li>
+                    <li>
+                        <a href="#made" class="mm-item"">How it's made</a>
+                    </li>
+                    <li>
+                        <a href="#feedback" class="mm-item">Chocolate is loved</a>
+                    </li>
+                </ul>
+                <ul class="mm-social-list">
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <svg class="mm-social-item" width="22" height="22"><use href="./images/sprite.svg#icon-instagram"></use></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/">
+                            <svg class="mm-social-item" width="22" height="22"><use href="./images/sprite.svg#icon-twitter"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        
-
-
     </header>
     <main>
         
@@ -355,5 +381,6 @@
         </div>
      </div>
      <script src="./js/pop-up.js"></script>
+     <script src="./js/menu.js"></script>
 </body>
 </html>
