@@ -40,14 +40,25 @@
                     </a>     
                 </li>
             </ul>
+
+            <button type="button" class="burger-btn">
+                <svg class="burger-icon" width="28" height="28">
+                    <use href="./images/sprite.svg#icon-burger"
+                    ></use>
+                </svg>
+            </button>
             </nav>
         </div>
+
+        
+
+
     </header>
     <main>
-        <!-- <div class="container"> -->
+        
             <!--hero-->
             <section class="hero">
-            <div class="container hero-container">
+            <div class="container hero-container hidden">
                 
                     <div class="flex-container">
                         <h1 class="hero-title">Treat yourself or a loved one to <br>our finest ingredients for a moment <br>of pure delight!
@@ -72,7 +83,7 @@
             </div>
             </section> 
             <!--benefits-->
-            <section class="benefits">
+            <section class="benefits hidden">
                 <div class="container">
                     <h2 class="visually-hidden">Benefits</h2>
                     <ul class="benefits-list">
@@ -97,7 +108,7 @@
                 </div>
             </section>
             <!--sensation-->
-            <section class="sensation">
+            <section class="sensation hidden">
                <div class="container">
                     <h2 class="sensation-title">It all adds up to one <br> exceptional <span class="highlight">taste</span>  sensation</h2>
                     <p class="sensation-description">At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.</p>
@@ -156,7 +167,7 @@
             </section>
             <!--how it's made-->
             <section id="made">
-               <div class="container">
+               <div class="container hidden">
                     <h2 class="made-title">How it's <span class="highlight">made?</span> </h2>
                     <div class="made-container">
                         <img src="./images/products/dish.jpg" alt="process" width="600" height="400" class="div-image">
@@ -184,7 +195,7 @@
                </div>
             </section>
             <!--feedback-->
-            <section id="feedback">
+            <section id="feedback" class="hidden">
                 <div class="container feedback-container">
                     <h2 class="feedback-title"> <span class="highlight">Chocolate</span> is loved</h2>
                     <ul class="feedback-list">
@@ -214,13 +225,13 @@
                             </div>
                         </li>
                     </ul>
-                    <button type="button" class="leave-button">Leave a review</button>
+                    <button type="button" class="leave-button" data-popup-open>Leave a review</button>
                 </div>
                 
             </section>
         </main>
-        <!-- </div>         -->
-    <footer class="footer">
+        
+    <footer class="footer hidden">
         <div class="container contacts-container">
             <div class="contacts-part-footer">
                 <p class="cure-header"><span class="highlight">Chocolate</span> a delicious <br> cure for a bad day
@@ -241,17 +252,22 @@
                     <li class="footer-nav-li"><a href="#made">How it's made</a></li>
                     <li class="footer-nav-li"><a href="#feedback">Chocolate is loved</a></li>
                 </ul>
-                <form>
-                    <input type="text">
-                    <button type="submit" class="subscribe-button">Subscribe</button>
+                <form class="footer-subs-form">
+                    <input 
+                    type="text"
+                    class="subs-input"
+                    placeholder="Enter your email"
+                    name="email-to-subscribe">
+                    <button type="submit" 
+                    class="subscribe-button">Subscribe</button>
                 </form>
             </div>
         </div>
     </footer>
     <!-- /* pop up modal-window */ -->
-     <div class="backdrop">
+     <div class="backdrop" data-popup>
         <div class="modal">
-            <button class="pop-up-close-btn" type="button">
+            <button class="pop-up-close-btn" type="button" data-popup-close>
                 <svg class="close-icon-btn" width="28" height="28">
                     <use href="./images/sprite.svg#icon-x-close"></use>
                 </svg>
@@ -305,7 +321,7 @@
                 <div class="comment-form">
                     <label for="comment" class="info-label">Comment</label>
                     <textarea 
-                    class="textarea-comments"
+                    class="info-input textarea-comments"
                     name="comments" 
                     id="comment"
                     placeholder="Enter text"></textarea>
@@ -321,7 +337,7 @@
                     >
                     <label for="pp" class="pp-label">
                         <span class="custom-box">
-                            <svg class="arrow-pp-icon" width="20" height="20">
+                            <svg class="arrow-pp-icon" width="15" height="13">
                                 <use href="./images/sprite.svg#icon-arrow"></use>
                             </svg>
                         </span>
@@ -338,5 +354,6 @@
             </form>
         </div>
      </div>
+     <script src="./js/pop-up.js"></script>
 </body>
 </html>
