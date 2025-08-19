@@ -245,4 +245,185 @@ button {
 .mm-social-item {
     stroke: white;
 }
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
 /* hero section */
+.hero-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+    margin-left: 20px;
+    max-width: 335px;
+    padding: 20px;
+    margin: 0 auto;
+    
+}
+
+
+.hero-title {
+    margin-bottom: 32px;
+}
+
+.hero {
+    margin-left: 20px;
+    margin-right: 20px;
+     background-image: url(../images/hero-background/hero-back-mob-min.jpg);
+     background-color: #FD9222; 
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 30px; 
+    min-height: 620px;
+    max-width: 335px;
+    margin-bottom: 60px;
+
+    margin: 0 auto;
+}
+
+@media (min-resolution: 192dpi) {
+    .hero {
+        background-image: url(../images/hero-background/hero-back-mob@2x-min.jpg);
+        background-color: #FD9222; 
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    }    
+}
+
+.flex-container {
+    height: 205px;
+
+    margin-top: 395px;
+}
+
+.hero-title {
+    width: 299px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+/* .hero-banner-buttons a {
+    justify-content: flex-end;
+} */
+
+.hero-list {
+    display: flex;
+    /* text-align: center; */
+    gap: 14px;
+
+    margin-bottom: 32px;
+}
+
+.button-item {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    background-color: #FD9222;
+    border: none;
+    border-radius: 100px;
+    padding: 12px 28px;
+}
+
+.button-item.how-made-button {
+    border: 1px solid white;
+    background: transparent;
+    transition: border-color 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+.how-made-button:hover,
+.how-made-button:focus {
+    border-color: #FD9222;
+    color: #FD9222;
+}
+
+.button-item.buy {
+    transition: background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+.button-item.buy:hover, 
+.button-item.buy:focus {
+    background-color: #FCF1E0;
+    color: #FD9222;
+}
+
+.scroll-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 350ms ease;
+
+    width: 107px;
+    height: 28px;
+}
+
+.scroll-bar:hover {
+    background-color: black;    
+    border-radius: 10px;
+    border: none;
+}
+
+.scroll-circle {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: none;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 350ms ease;
+}
+
+.scroll-bar:hover .scroll-circle,
+.scroll-bar:focus .scroll-circle {
+    background-color: #FD9222;
+}
+
+.scroll-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 8px;
+  cursor: pointer;
+  transition: color 350ms ease;
+
+  width: 107px;
+  height: 28px;
+}
+
+.scroll-bar:hover .scroll-link,
+.scroll-bar:focus .scroll-link {
+    color: #FD9222;
+}
+
+.icon-arrow {
+    fill: #FD9222;
+    stroke: #FD9222;
+    width: 16px;
+    height: 16px;
+
+    transition: fill 350ms ease;
+}
+
+.scroll-bar:hover .icon-arrow {
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+}

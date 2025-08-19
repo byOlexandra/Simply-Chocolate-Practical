@@ -1,33 +1,17 @@
 /* hero */
-.hero-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    
+.hero-container {    
     margin-left: 40px;
     max-width: 1136px;
     padding: 40px 32px;
     height: 600px;
-
-    margin: 0 auto;
 }
 
-.hero-title {
-    margin-bottom: 32px;
-}
+
 .hero {
     margin-bottom: 72px;
     margin-left: 32px;
     margin-right: 32px;
-     background-image: url(../images/backgrounds/powder-bachground.jpg);
-     background-color: #FD9222; 
-     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 30px; 
     min-height: 600px;
-
 }
 
 .flex-container {
@@ -36,8 +20,7 @@
 
 
 .hero-banner-buttons {
-    position: relative;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
    
 }
@@ -47,76 +30,25 @@
 }
 
 .hero-list {
-    display: flex;
     text-align: center;
-    gap: 14px;
 }
 
 .button-item {
-    display: block;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    color: white;
-    background-color: #FD9222;
-    border: none;
-    border-radius: 100px;
     padding: 14px 40px;
-    cursor: pointer;
-}
-
-.button-item.buy {
-    transition: background-color 250ms ease-in-out,
-    color 250ms ease-in-out;
-}
-
-.button-item.buy:hover, 
-.button-item.buy:focus {
-    background-color: #FCF1E0;
-    color: #FD9222;
-}
-
-
-.how-made-button {
-    border: 1px solid white;
-    background: transparent;
-    transition: border-color 250ms ease-in-out,
-    color 250ms ease-in-out;
-}
-
-.how-made-button:hover,
-.how-made-button:focus {
-    border-color: #FD9222;
-    color: #FD9222;
 }
 
 .scroll-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 350ms ease;
 
     width: 130px;
     height: 53px;
 }
 
-.scroll-bar:hover {
-    background-color: black;    
-    border-radius: 10px;
-    border: none;
-}
+
 
 
 .scroll-circle {
-    background-color: #FD9222;
-    border-radius: 50%;
-    border-color: none;
     width: 38px;
     height: 38px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 350ms ease;
 }
 
 .scroll-bar:hover .scroll-circle,
@@ -125,26 +57,7 @@
 }
 
 .scroll-link {
-  position: relative;
-  display: flex;
-  align-items: center;
-  color: #FD9222;
-  font-size: 14px;
   gap: 8px;
-  cursor: pointer;
-  transition: color 350ms ease;
-}
-
-.scroll-bar:hover .scroll-link,
-.scroll-bar:focus .scroll-link {
-    color: #FFFFFF;
-}
-
-.icon-arrow {
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
-
-    transition: fill 350ms ease;
 }
 
 .scroll-bar:hover .icon-arrow {
