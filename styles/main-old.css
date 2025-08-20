@@ -9,20 +9,10 @@
 
 .hero {
     margin-bottom: 72px;
+    min-height: 600px;
+
     margin-left: 32px;
     margin-right: 32px;
-    min-height: 600px;
-}
-
-.flex-container {
-    height: 179px;
-}
-
-
-.hero-banner-buttons {
-    flex-direction: row;
-    justify-content: space-between;
-   
 }
 
 .hero-banner-buttons a {
@@ -43,26 +33,6 @@
     height: 53px;
 }
 
-
-
-
-.scroll-circle {
-    width: 38px;
-    height: 38px;
-}
-
-.scroll-bar:hover .scroll-circle,
-.scroll-bar:focus .scroll-circle {
-    background-color: #FFFFFF;
-}
-
-.scroll-link {
-  gap: 8px;
-}
-
-.scroll-bar:hover .icon-arrow {
-    fill: #FD9222;
-}
 
 
 /* benefits */
